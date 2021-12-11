@@ -1,0 +1,32 @@
+<button><a href="/additem">Add Item</a></button>
+
+
+<table 
+style="padding: 0 40px; margin: 50px; text-align: center; align-items: center; position: absolute;
+line-height: 90px; right: 517px; box-sizing: content-box; color: blueviolet; background-image: url(/static/pexels-max-vakhtbovych-7174386.jpg);">
+    
+    <h1 style="display: flex; position: relative; margin-top: 100px;text-align: center; align-items: center;">Seller Section</h1>
+    <tr>
+        <th>Item Name</th>
+        <th>Item Price</th>
+        <th>Seller</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </tr>
+
+    {% for item in items %}
+    <tr>
+    <td>{{item.itmename}}</td>
+    <td>{{item.price}} Naira</td>
+    <td>{{item.seller}}</td>
+    <td >  <a href= "{{ url_for( 'edit_item', id=item.ID)}}" style="color:blue;">Edit</a></td>
+    <td>  <a href= "{{ url_for( 'delete_item', id=item.ID)}}" style="color:red">Delete </a></td>
+    
+    
+    </tr>
+{% endfor %}
+
+
+
+</table>

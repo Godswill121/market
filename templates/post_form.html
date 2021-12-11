@@ -1,0 +1,156 @@
+<h1>Add Customer</h1>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+
+<body>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(./px2.jpg);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+    }
+    <!-- .Subform{
+        width: 800px;
+        background-color: rgb(0, 0, 0.6);
+        margin: auto;
+        color: #FFFFFF;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .happy{
+        background-color: rgb(0, 0, 0,0.5);
+        height: 400px;
+        width: 800px;
+        margin: auto;
+    
+    }
+    form{
+        padding: 10px;
+    }
+    #name{
+        width: 100%;
+        height: 100px;
+    }
+     -->
+    
+    .itemname{
+        position: relative;
+        right: -97px;
+        top: 13px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+    }
+   
+    .price{
+        position: relative;
+        left: 470px;
+        top: -32px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+    }
+   
+    .seller{
+        position: relative;
+        right: -96px;
+        top: 37px;
+        line-height: 40px;
+        width: 150px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        counter-reset: #555;
+    }
+    
+    <!-- .Projectlable{
+        position: absolute;
+        text-align: right;
+        top: 227px;
+        right: 460px;
+        color: white;
+    }
+    .ProjectName{
+        position: relative;
+        left: 319px;
+        top: 40px;
+        line-height: 40px;
+        width: 250px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        counter-reset: #555;
+    }
+    .typelabel{
+        position: absolute;
+        text-align: right;
+        top: 337px;
+        left: 380px;
+        color: white;
+    }
+    .Projecttype{
+        position: relative;
+        right: 300px;
+        top: 150px;
+        line-height: 40px;
+        width: 250px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        counter-reset: #555;
+    }
+    .Uploadlabel{
+        position: absolute;
+        text-align: right;
+        top: 343px;
+        right: 460px;
+        color: white;
+    }
+    .Upload{
+        position: relative;
+        left: 460px;
+        top: 105px;
+        line-height: 40px;
+        width: 250px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        counter-reset: #555;
+    } -->
+    .submit{
+        position: relative;
+        left:400px;
+        top: 167px;
+        line-height: 40px;
+        width: 90px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        counter-reset: #555
+    }
+    
+}
+
+    <form action="/additem" method="POST">
+    
+        <input type="text" name="itemname" placeholder="Item Name">
+        <br><br>
+        <input type="number" name="price" placeholder="Item Price">
+        <br><br>
+        <input type="text" name="seller" placeholder="Seller">
+        <br><br>
+        <input type="submit" value="submit">
+    
+    </form>
+    </body>

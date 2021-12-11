@@ -1,0 +1,22 @@
+<button><a href="/admin">Admin</a></button>
+
+
+<table>
+    <tr>
+        <th>Item Name</th>
+        <th>Item Price</th>
+        <th>Seller</th>
+
+    </tr>
+
+    {% for item in items %}
+    <tr>
+    <td>{{item.itmename}}</td>
+    <td>{{item.price}} Naira</td>
+    <td>{{item.seller}}</td>
+    
+    </tr>
+{% endfor %}
+
+
+</table>
